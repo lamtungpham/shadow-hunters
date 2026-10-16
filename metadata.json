@@ -1,0 +1,8 @@
+{
+  "name": "Shadow Hunters",
+  "description": "Online multiplayer deduction-based survival board game featuring Shadows, Hunters, and Neutrals.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

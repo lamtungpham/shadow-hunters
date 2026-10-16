@@ -1,14 +1,31 @@
 # Shadow Hunters
-[![Build Status](https://travis-ci.com/amritrau/shadow-hunters.svg?token=V3V6etPVJAwyqsa9Zq7P&branch=master)](https://travis-ci.com/amritrau/shadow-hunters)
 
-Shadow Hunters is an online multiplayer game (based on the [board game](https://en.wikipedia.org/wiki/Shadow_Hunters) of the same name) in which players assume the identities of characters belonging to three opposing factions. The Shadows, inhabitants of the underworld, aim to destroy all Hunters, while the Hunters, protectors of the mortal realm, seek to banish the Shadows. Neutrals, caught in the crossfire, pursue their own hidden objectives.
+Shadow Hunters is an online social deduction and survival board game implemented in React, TypeScript, and Vite. Players assume the secret identities of characters belonging to three opposing factions:
+- **The Shadows**: Inhabitants of the underworld aiming to destroy all Hunters or eliminate three Neutrals.
+- **The Hunters**: Protectors of the mortal realm seeking to banish all Shadows.
+- **The Neutrals**: Caught in the crossfire, pursuing their own unique survival objectives.
 
-As night settles on the ruins of abandoned town at the edge of a mysterious forest, the identities of ally and enemy alike are obscured by a shifting fog, and players must discover who is friend and who is foe before striking from the darkness!
+## Features
 
-Play the game at http://shadowhunters.live.
+- **Original Game Logic**: 100% faithful port of characters, character specials, allegiance distributions, areas, Hermit cards, White cards, and Black cards.
+- **Dynamic Player Support**: 4 to 8 players with AI bot automation for open seats.
+- **Visuals & Art**: Preserves original gothic aesthetics, cards, character portraits, zone layouts, damage tracks, and color coding.
+- **Interactive Gameplay**:
+  - Movement rolls (D4 + D6) with re-roll rules and Mystic Compass support.
+  - Area actions across all 6 areas (Hermit's Cabin, Underworld Gate, Church, Cemetery, Weird Woods, Erstwhile Altar).
+  - Combat system with attack range (zones & Handgun), damage calculation (|D6 - D4|), equipment modifiers, and counterattacks.
+  - Real-time colored event log and game action prompts.
+  - Comprehensive in-game Rulebook and character reference modal.
 
-## Contributing
-Contributions and feedback are welcome. Before opening pull requests or issues, please read the [contribution guidelines](https://github.com/amritrau/shadow-hunters/blob/master/CONTRIBUTING.md).
+## Getting Started
 
-## Support Us
-Shadow Hunters is supported by [donations](https://www.paypal.com/donate?token=2Hzl9uC9E-VN9jwnoWTIoCqpdFGo0VWiLLOHVRWUaiQrTlGD6ljZKGGVsAaldlt6xGJTN0zZxmmD6BEY) from its users.
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```

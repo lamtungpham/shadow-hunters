@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Preserve Palatino styling and gothic aesthetic of the original game */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+/* Custom scrollbar matching original */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(80, 70, 95, 0.6);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}

@@ -3,21 +3,25 @@
   "version": "1.0.0",
   "description": "Online multiplayer deduction-based survival game",
   "main": "setup.js",
-  "dependencies": {
-    "testcafe": "^1.20.1"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "testcafe chrome tests/serial/ --selector-timeout 60000 --app \"AI_SLEEP=0 SOCKET_SLEEP=0.25 python3 shadow-hunters/app.py\" && testcafe -c 2 chrome tests/concurrent/ --app \"AI_SLEEP=0 SOCKET_SLEEP=0.25 python3 shadow-hunters/app.py\""
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amritrau/shadow-hunters.git"
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amritrau/shadow-hunters/issues"
-  },
-  "homepage": "https://github.com/amritrau/shadow-hunters#readme"
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  }
 }
+
